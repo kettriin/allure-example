@@ -2,7 +2,7 @@ package manual;
 
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
-import io.qameta.allure.Story;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
@@ -11,7 +11,7 @@ import static io.qameta.allure.Allure.step;
 @Feature("AuthMainPage")
 public class AuthMainPageTest {
 
-    @Story("Успешная авторизация с главной страницы")
+    @DisplayName("Успешная авторизация с главной страницы")
     @Test
     void mailMainPageAuthPositiveTest() {
         step("Перейти на главную mail.ru");
