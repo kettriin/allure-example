@@ -25,18 +25,15 @@ allure {
 }
 
 dependencies {
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-}
-
-dependencies {
     testImplementation(
             'org.junit.jupiter:junit-jupiter:5.10.0',
-            'org.junit.jupiter:junit-jupiter',
             'com.codeborne:selenide:7.0.4',
             'io.qameta.allure:allure-selenide:2.24.0',
+            'io.qameta.allure:allure-junit5:2.24.0',
             'org.slf4j:slf4j-simple:2.0.9',
             'com.github.javafaker:javafaker:1.0.2'
     )
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 test {
